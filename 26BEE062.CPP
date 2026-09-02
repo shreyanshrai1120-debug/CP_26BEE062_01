@@ -1,16 +1,25 @@
-//Add two numbers
+//Swap two numbers
 
 #include <stdio.h>
+
 int main(){
 
-float a,b,c;
-printf("Enter two numbers: ");
-scanf("%f",&a);
-printf(" + ");
-scanf("%f",&b);
-c = a + b;
-printf("The sum of the given numbers is : %f\n",c );
-return 0;
-}
+int a,b,temp;
 
+	printf("Enter first value: ");
+	scanf("%d",&a);
+
+	printf("Enter second value :");
+	scanf("%d",&b);
+
+	printf("Before swapping : a = %d,b = %d\n", a,b);
+
+
+	temp =a;
+	a=b;
+	b=temp;
+
+	printf("After swapping :a = %d,b = %d\n",a,b);
+	return 0;
+	}
 
